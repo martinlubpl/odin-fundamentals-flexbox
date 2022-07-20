@@ -3,30 +3,168 @@
 
 
 body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display: flex;
     flex-direction: column;
     /* padding: 0; */
     margin: 0;
 }
 
-.header {
+.header,
+footer {
     background-color: #1f2937;
+    padding: 32px 64px;
 }
 
 .topbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 32px;
+}
+
+.nav a {
+    text-decoration: none;
 }
 
 .topbar ul {
     display: flex;
     list-style-type: none;
-    gap: 32px
+    gap: 32px;
+    margin: 0;
 }
 
 .topbar .logo {
     font-family: 'Work Sans', sans-serif;
     font-size: 24px;
     color: #f9faf8;
+}
+
+.banner {
+    display: flex;
+    align-items: flex-start;
+}
+
+.banner div {
+    margin-right: 32px;
+}
+
+.banner h4 {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 48px;
+    font-weight: 900;
+    color: #f9faf8;
+    margin: 16px 0;
+}
+
+.banner button {
+    margin-top: 16px;
+    border-radius: 8px;
+    padding: 8px 20px;
+    background-color: #3882f6;
+    font-size: 18px;
+    color: #e5e7eb;
+}
+
+.banner img {
+    flex: 0;
+
+}
+
+.nav a,
+.banner p,
+footer {
+    font-size: 18px;
+    color: #e5e7eb;
+}
+
+.info {
+    padding: 64px;
+}
+
+.info h3 {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 36px;
+    font-weight: 900;
+    color: #1f2937;
+    text-align: center;
+    margin: 0 0 32px 0;
+}
+
+.quot {
+    background-color: #e5e7eb;
+    padding: 64px;
+    display: flex;
+    flex-direction: column;
+}
+
+.quot p {
+    font-size: 36px;
+    color: #1f2937;
+    font-style: italic;
+    font-weight: lighter;
+}
+
+.quot .author {
+    align-self: flex-end;
+    font-size: 24px;
+    font-weight: 700;
+    color: #1f2937;
+
+}
+
+#item-container {
+    display: flex;
+    gap: 64px;
+    justify-content: center;
+}
+
+.item img {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    border: 3px solid #3882f6;
+}
+
+.item {
+    width: 200px;
+}
+
+.call {
+    color: #e5e7eb;
+    display: flex;
+    padding: 64px;
+    justify-content: center;
+}
+
+.card {
+    display: flex;
+
+    align-items: center;
+    background-color: #3882f6;
+    border-radius: 5px;
+    padding: 16px;
+    gap: 64px
+}
+
+.card div {
+    margin-left: 64px;
+}
+
+.card button {
+    margin-right: 64px;
+    background-color: #3882f6;
+    border-radius: 6px;
+    border: 2px solid #e5e7eb;
+    color: #e5e7eb;
+    padding: 4px 20px;
+}
+
+.card h3 {
+    margin: 0;
+}
+
+footer {
+    text-align: center;
 }
